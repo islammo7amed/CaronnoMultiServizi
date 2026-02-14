@@ -1,0 +1,238 @@
+.contact-info {
+    padding: 5rem 1.5rem 7rem;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.contact-info > div {
+    border: 1px solid #d4d4d4;
+    flex-grow: 1;
+    flex-basis: 80%;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 1rem;
+    line-height: 1.6rem;
+}
+
+.contact-info > div i {
+    font-size: 1.6rem;
+    color: var(--color-secondary);
+}
+
+.contact-info > div h4 {
+    margin: 1rem 0;
+    color: var(--color-primary);
+    font-weight: 400;
+}
+
+.contact-info > div address {
+    font-style: normal;
+}
+
+.faq {
+    margin: 3rem 0 1.5rem;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.faq > div {
+    border: 1px solid #d4d4d4;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    line-height: 1.4rem;
+    flex-grow: 1;
+    line-height: 1.6rem;
+}
+
+.faq > div h4 {
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+    font-weight: 400;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-offwhite);
+    gap: 3rem;
+    padding: 5rem 1.5rem;
+}
+
+.contact form, .map-container {
+    flex-grow: 1;
+    flex-basis: 40%;
+    border: 1px solid #e5e5e5;
+    border-radius: 1rem;
+}
+
+.contact form {
+    background-color: white;
+    padding: 2rem;
+}
+
+.contact form select {
+    padding: 0.5rem;
+    background-color: white;
+    border: 2px solid #e5e5e5;
+    border-radius: 0.4rem;
+    width: 100%;
+}
+
+.contact form select:focus {
+    border: 2px solid var(--color-primary);
+}
+
+.contact form textarea {
+    resize: none;
+    overflow: auto;
+    field-sizing: content;
+    word-break: break-all;
+    min-height: 3.5rem;
+    max-height: 8rem;
+    line-height: 1.3rem;
+}
+
+.map-container {
+    background-color: white;
+    padding-bottom: 1.5rem;
+}
+
+.map-container iframe {
+    width: 100%;
+    min-height: 450px;
+    height: 90%;
+    border-radius: 1.3rem;
+}
+
+.contact-field {
+    background-color: #f3f3f5;
+    padding: 0.5rem;
+    border: 1px solid #f3f3f5;
+    outline: none;
+    border-radius: 0.4rem;
+    width: 100%;
+}
+
+.contact-field:focus {
+    border: 1px solid var(--color-primary);
+    outline: 3px solid #d3d4d8;
+}
+
+.contact form fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+.contact form fieldset div {
+    flex-grow: 1;
+}
+
+.contact form fieldset div input {
+    width: 100%;
+}
+
+.contact form h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.contact form label {
+    display: inline-block;
+    margin: 1.5rem 0 0.4rem 0;
+}
+
+.contact form input[type='submit'] {
+    margin-top: 1.5rem;
+    text-align: centr;
+    background-color: var(--color-primary);
+    color: white;
+    font-weight: 600;
+    padding: 0.8rem;
+    border-radius: 0.4rem;
+    border: 0;
+    width: 100%;
+    cursor: pointer;
+}
+
+.contact form input[type='submit']:hover {
+    background-color: #054585;
+}
+
+.contact form hr {
+    margin: 1.5rem 0;
+    background-color: #e5e7eb;
+}
+
+.btn-contact {
+    display: inline-block;
+    margin: 1.5rem 1rem 0 0;
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    user-select: none;
+}
+
+#call {
+    border: 1px solid #d5d7da;
+    color: var(--text-color);
+}
+
+#call:hover {
+    background-color: #f3f3f5;
+}
+
+#whatsapp {
+    border: 1px solid var(--whatsapp-color);
+    background-color: var(--whatsapp-color);
+    color: white;
+}
+
+#whatsapp:hover {
+    border-color: var(--whatsapp-color-dark);
+    background-color: var(--whatsapp-color-dark);
+}
+
+@media all and (min-width: 768px) {
+    .contact-info {
+        padding: 5rem 2.5rem 7rem;
+    }
+
+    .contact-info > div {
+        flex-basis: 40%;
+        font-size: 1rem;
+    }
+
+    .contact {
+        padding: 5rem 2.5rem;
+    }
+
+    .faq {
+        flex-direction: row;
+    }
+
+    .faq > div {
+        flex-basis: 40%;
+        font-size: 1rem;
+    }
+}
+
+@media all and (min-width: 1000px) {
+    .contact {
+        flex-direction: row;
+    }
+
+    .contact form fieldset {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .contact-info > div {
+        flex-basis: 20%;
+    }
+}

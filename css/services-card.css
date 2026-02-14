@@ -1,0 +1,137 @@
+.service, .service-card, .service-card-title,
+.service-card ul, .service-card li {
+    display: flex;
+}
+
+.service, .service-card, .service-card ul {
+    flex-direction: column;
+}
+
+.service-card-title, .service-card li {
+    align-items: center;
+}
+
+.service {
+    gap: 2.5rem;
+}
+
+.service > div {
+    flex-grow: 1;
+    flex-basis: 22rem;
+    border-radius: 1rem;
+}
+
+.service-card {
+    border: 1px solid #d4d4d4;
+    gap: 1.6rem;
+    line-height: 1.6rem;
+    padding: 2rem 2rem 3rem;
+}
+
+.service-card-title {
+    gap: 1rem;
+}
+
+.service-card-icon {
+    width: 2.8rem;
+    height: 2.8rem;
+    color: var(--color-secondary);
+}
+
+.service-card-title h3 {
+    font-size: 1.9rem;
+    line-height: 2.3rem;
+}
+
+.service-card ul, .service-card li {
+    gap: 0.8rem;
+}
+
+.list-icon {
+    width: 1.3rem;
+    height: 1.3rem;
+    color: var(--color-secondary);
+}
+
+.service-card a {
+    width: fit-content;
+    padding: 0.5rem 1.3rem;
+    border-radius: 0.5rem;
+}
+
+.service-bg-wrapper {
+    height: 22rem;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.service-bg {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition-property: scale;
+    transition-duration: 0.3s;
+}
+
+.service-bg-wrapper:hover .service-bg {
+    scale: 1.06;
+}
+
+.service-load {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.load-top {
+    right: 1.5rem;
+    top: 1.5rem;
+    background-color: var(--color-secondary);
+}
+
+.load-bottom {
+    bottom: 1.5rem;
+    left: 1.5rem;
+    background-color: #c9c7c7;
+    animation-name: service-load-animi;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-duration: 0.5s;
+}
+
+@keyframes service-load-animi {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@media all and (min-width: 850px) {
+    .service:nth-child(odd) .service-bg-wrapper {
+        order: 1;
+    }
+
+    .service:nth-child(even) .service-card {
+        order: 2;
+    }
+
+    .service {
+        flex-direction: row;
+        gap: 3.5rem;
+        align-items: center;
+    }
+}
+
+@media all and (min-width: 1000px) {
+    .additional-services-cont {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

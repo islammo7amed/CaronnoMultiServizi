@@ -1,0 +1,179 @@
+.history, .mission-vision, .values-placeholder, .numbers-content,
+.numbers-content > p, .team-placeholder, .team-card {
+    display: flex;
+}
+
+.history, .mission-vision, .values-placeholder,
+.numbers-content > p, .team-card {
+    flex-direction: column;
+}
+
+.numbers-content > p, .team-card {
+    align-items: center;
+    text-align: center;
+}
+
+.values-placeholder, .numbers-content {
+    margin: 4rem 0 1.5rem;
+}
+
+.values-placeholder, .numbers-content, .team-placeholder {
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.history > div, .values-placeholder > div, .team-placeholder > div {
+    flex-grow: 1;
+}
+
+.history {
+    gap: 3rem;
+    padding: 5rem 1.5rem;
+}
+
+.history-content h3 {
+    margin: 1rem 0;
+}
+
+.history-content p {
+    margin-top: 1rem;
+    line-height: 1.6rem;
+}
+
+.history-content p:last-child {
+    margin-bottom: 1.5rem;
+}
+
+.history-bg {
+    background-image: url(/assets/images/history.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem;
+    box-shadow: 0 10px 10px rgb(238, 237, 237);
+    min-height: 350px;
+}
+
+.mission-vision, .team {
+    background-color: var(--background-offwhite);
+}
+
+.mission-vision {
+    text-align: center;
+    line-height: 1.4rem;
+}
+
+.mission-vision > div, .mission-vision h3 {
+    margin: 1.5rem 0;
+}
+
+.mission-vision .mv-icon {
+    width: 4rem;
+    height: 4rem;
+    color: var(--color-secondary);
+}
+
+.mission-vision h3 {
+    font-size: 1.8rem;
+}
+
+.mission-vision p {
+    margin: 0.5rem 0;
+}
+
+.values-placeholder > div .g-card-icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+.numbers-content {
+    justify-content: space-evenly;
+}
+
+.numbers-content > p {
+    gap: 0.5rem;
+    flex-basis: 40%;
+}
+
+.num-value {
+    color: var(--color-secondary);
+    font-size: 2.2rem;
+}
+
+.team-placeholder {
+    margin: 3rem 0 1.5rem;
+}
+
+.team-card {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    gap: 0.8rem;
+    line-height: 1.5rem;
+    border: 1px solid rgb(224, 224, 224);
+}
+
+.profile {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.profile img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-name {
+    font-weight: 400;
+    color: var(--color-primary);
+}
+
+.profile-title {
+    color: var(--color-secondary)
+}
+
+@media all and (min-width: 768px) {
+    .history {
+        padding: 5rem 2.5rem;
+    }
+
+    .values-placeholder {
+        flex-direction: row;
+    }
+
+    .values-placeholder > div {
+        flex-basis: 40%;
+    }
+
+    .team-placeholder > div {
+        flex-basis: 28%;
+    }
+}
+
+@media all and (min-width: 900px) {
+    .history {
+        flex-direction: row;
+    }
+
+    .history > div {
+        flex-basis: 40%;
+    }
+
+    .mission-vision {
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+    .numbers-content > p {
+        flex-basis: 22%;
+    }
+}
+
+@media all and (min-width: 1100px) {
+    .values-placeholder > div {
+        flex-basis: 22%;
+    }
+}

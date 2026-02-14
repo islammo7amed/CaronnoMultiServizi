@@ -1,0 +1,170 @@
+.header-placeholder {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.section-title, .section-desc {
+    text-align: center;
+}
+
+.section-title {
+    margin-top: 1.5rem;
+}
+
+.section-desc {
+    margin: 1.5rem auto;
+    line-height: 1.7rem;
+}
+
+.page-header, .contact-us {
+    background-image: radial-gradient(var(--color-primary-light), var(--color-primary));
+    min-height: 50vh;
+    padding: 2.5rem 1.5rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.contact-us h3 {
+    word-break: break-all;
+}
+
+.page-header h2, .contact-us h3 {
+    text-align: center;
+}
+
+.page-header h2 {
+    font-size: 2.5rem;
+    letter-spacing: 0.3rem;
+}
+
+.contact-us h3 {
+    letter-spacing: 0.2rem;
+    color: white;
+    font-weight: bold;
+}
+
+.page-header p, .contact-us p {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    line-height: 1.8rem;
+}
+
+.page-header p {
+    font-size: 1.3rem;
+}
+
+.contact-us p {
+    font-size: 1.2rem;
+}
+
+.contact-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+.contact-buttons a {
+    padding: 1rem 1.8rem;
+    color: white;
+    width: fit-content;
+}
+
+.contact-buttons a:last-child {
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.contact-buttons a:first-child {
+    background-color: var(--color-secondary);
+    border: 2px solid var(--color-secondary);
+}
+
+.contact-buttons a:last-child:hover {
+    background-color: white;
+    color: var(--color-primary);
+}
+
+.contact-buttons a:first-child:hover {
+    background-color: var(--color-secondary-light);
+    color: white;
+    border: 2px solid var(--color-secondary-light);
+}
+
+.whats-general {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    background-color: var(--whatsapp-color);
+    padding: 0.8rem;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    color: white;
+    transition: scale 0.3s 0.5s;
+    z-index: 1000;
+}
+
+.whats-general:hover {
+    background-color: var(--whatsapp-color-dark);
+    scale: 1.2;
+}
+
+@media all and (min-width: 768px) {
+    .name {
+		font-size: 1.3rem;
+	}
+    
+	.page-header h2 {
+        font-size: 3.5rem;
+    }
+
+    .contact-us h3 {
+        font-size: 2.7rem;
+    }
+
+    .page-header p {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+    }
+
+    .contact-us h3 {
+        word-break: normal;
+    }
+
+    .contact-us p {
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+    }
+
+    .contact-buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .whats-general {
+        right: 3rem;
+        bottom: 3rem;
+    }
+}
+
+@media all and (min-width: 1000px) {
+    .contact-us p {
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+        width: 50%;
+    }
+}
+
+@media all and (min-width: 1060px) {
+    .name {
+		font-size: 1.5rem;
+	}
+}

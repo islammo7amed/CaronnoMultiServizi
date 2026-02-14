@@ -1,0 +1,83 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--color-primary: #003366;
+	--color-primary-light: #01468b;
+	--color-secondary: #1ec8a5;
+	--color-secondary-light: #33d8b7;
+	--text-color: #585757;
+	--background-offwhite: #F9FAFB;
+	--whatsapp-color: #00c950;
+	--whatsapp-color-dark: #01a040;
+}
+
+body {
+	font-family: "Inter", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-size: 0.9rem;
+	color: var(--text-color);
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+}
+
+.c-btn {
+    border-radius: 0.7rem;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    font-size: 1rem ;
+	user-select: none;
+}
+
+.main-btn {
+    background-color: var(--color-secondary);
+	color: white !important;
+    padding: 0.6rem 1.1rem;
+}
+
+.btn-blue {
+	background-color: var(--color-primary);
+	color: white !important;
+    padding: 0.6rem 1.1rem;
+}
+
+.main-btn:hover {
+    background-color: var(--color-secondary-light);
+}
+
+.btn-blue:hover {
+	background-color: var(--color-primary-light);
+}
+
+h3 {
+    color: var(--color-primary);
+    font-size: 2.3rem;
+    font-weight: 400;
+}
+
+section {
+	padding: 3rem 1.5rem;
+}
+
+@media all and (min-width: 768px) {
+	body {
+		font-size: 1rem;
+	}
+
+	section {
+		padding: 3rem 2.5rem;
+	}
+}

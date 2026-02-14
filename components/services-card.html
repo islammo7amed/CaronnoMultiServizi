@@ -1,0 +1,18 @@
+<template>
+    <div class="service">
+        <div class="service-card">
+            <div class="service-card-title">
+                <i class="service-card-icon" data-lucide="{{icon}}"></i>
+                <h3>{{title}}</h3>
+            </div>
+            <p>{{desc}}</p>
+            <ul>{{serviceTypes}}</ul>
+            <a href="/pages/contact.html" class="c-btn main-btn">Richiedi Preventivo</a>
+        </div>
+        <div class="service-bg-wrapper">
+            <div class="service-bg" style="background-image: url('{{imageUrl}}');"></div>
+            <div class="service-load load-top"></div>
+            <div class="service-load load-bottom"></div>
+        </div>
+    </div>
+</template>

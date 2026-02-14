@@ -1,0 +1,92 @@
+.gallery-card {
+    height: 270px;
+    cursor: pointer;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 0.3s;
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.gallery-card:hover img {
+    filter: brightness(0.8);
+    transform: scale(1.06);
+}
+
+.card-desc {
+    position: absolute;
+    left: 1.5rem;
+    right: 1.5rem;
+    bottom: 0;
+    transform: translateY(calc(100% - 1rem));
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    line-height: 1.2rem;
+    transition: transform 0.3s;
+}
+
+.gallery-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-card:hover .card-desc {
+    transform: translateY(-1.5rem);
+}
+
+.card-desc h4 {
+    color: var(--color-primary);
+    margin-bottom: 0.3rem;
+}
+
+.card-load {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    opacity: 1;
+    background-color: var(--color-secondary);
+    animation-name: card-load-animi;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+.card-load-normal {
+    right: 1.5rem;
+    top: 1.5rem;
+    animation-duration: 1s;
+}
+
+.card-load-hover {
+    right: 2.1rem;
+    top: 2.1rem;
+    background-color: #c9c7c7;
+    animation-duration: 0.5s;
+    display: none;
+}
+
+.gallery-card:hover .card-load-normal {
+    animation: none;
+}
+
+.gallery-card:hover .card-load-hover {
+    display: block;
+}
+
+@keyframes card-load-animi {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}

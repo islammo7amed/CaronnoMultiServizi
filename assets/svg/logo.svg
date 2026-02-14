@@ -1,0 +1,67 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#08305a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4e8ca6;stop-opacity:1" />
+    </linearGradient>
+
+    <style>
+      @keyframes shine {
+        0%, 100% { opacity: 0.8; transform: scale(1); }
+        50% { opacity: 1; transform: scale(1.05); }
+      }
+      .star-layer { 
+        animation: shine 3s infinite ease-in-out; 
+        transform-origin: 115px 60px; 
+      }
+      .home-layer {
+        opacity: 0.4;
+      }
+    </style>
+  </defs>
+
+  <rect width="200" height="200" rx="50" fill="url(#bgGrad)" />
+
+  <circle cx="50" cy="45" r="2" fill="white" opacity="0.5" />
+  
+  <g class="home-layer" transform="translate(136, 135)">
+  <!-- Roof -->
+  <path
+    d="M18 2 L2 16 C1 17 1 19 3 20 C4 21 6 21 7 20 L18 10 L29 20 C30 21 32 21 33 20 C35 19 35 17 34 16 Z"
+    fill="white"
+  />
+
+  <!-- House Body -->
+  <rect
+    x="6"
+    y="16"
+    width="24"
+    height="20"
+    rx="3"
+    fill="white"
+  />
+
+  <!-- Door -->
+  <rect
+    x="15"
+    y="24"
+    width="6"
+    height="12"
+    rx="1.5"
+    fill="#08305a"
+  />
+</g>
+
+
+  <text x="98" y="120" font-family="Arial, sans-serif" font-weight="bold" font-size="60" fill="white" text-anchor="middle">C</text>
+
+  <g class="star-layer">
+    <path d="M115 30 Q118 58 145 63 Q118 68 115 95 Q112 68 85 63 Q112 58 115 30" 
+          fill="none" stroke="#2dbcae" stroke-width="5" stroke-linejoin="round" />
+    <path d="M152 35 H162 M157 30 V40" stroke="#2dbcae" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <circle cx="45" cy="165" r="10" fill="#2dbcae">
+    <animate attributeName="cy" values="165;158;165" dur="4s" repeatCount="indefinite" />
+  </circle>
+</svg>
