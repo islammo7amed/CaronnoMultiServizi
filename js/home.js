@@ -58,7 +58,7 @@ let strengths = [
     },
 ];
 
-const generalCard = await GetComponent("../components/general-card.html");
+const generalCard = await GetComponent("/components/general-card.html");
 
 services.forEach(element => {
     let cardItem = RenderTemplate(generalCard, element);
