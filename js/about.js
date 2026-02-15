@@ -24,7 +24,7 @@ let values = [
     },
 ];
 
-const generalCard = await GetComponent("/components/general-card.html");
+const generalCard = await GetComponent("../components/general-card.html");
 
 values.forEach(element => {
     let cardItem = RenderTemplate(generalCard, element);

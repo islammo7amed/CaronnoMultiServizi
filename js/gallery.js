@@ -6,47 +6,47 @@ const fullImage = document.getElementById("full-image");
 
 let galleryData = [
     {
-        imageSrc: "/assets/images/gallery-item-1.jpg",
+        imageSrc: "../assets/images/gallery-item-1.jpg",
         category: "Team",
         description: "Team professionale in uniforme"
     },
     {
-        imageSrc: "/assets/images/gallery-item-2.jpg",
+        imageSrc: "../assets/images/gallery-item-2.jpg",
         category: "Uffici",
         description: "Pulizia professionale ufficio moderno"
     },
     {
-        imageSrc: "/assets/images/gallery-item-3.jpg",
+        imageSrc: "../assets/images/gallery-item-3.jpg",
         category: "Prima/Dopo",
         description: "Lucidatura pavimenti professionale"
     },
     {
-        imageSrc: "/assets/images/gallery-item-4.jpg",
+        imageSrc: "../assets/images/gallery-item-4.jpg",
         category: "Abitazioni",
         description: "Pulizia domestica cucina e soggiorno"
     },
     {
-        imageSrc: "/assets/images/gallery-item-5.jpg",
+        imageSrc: "../assets/images/gallery-item-5.jpg",
         category: "Industriale",
         description: "Pulizia impianti industriali"
     },
     {
-        imageSrc: "/assets/images/gallery-item-6.jpg",
+        imageSrc: "../assets/images/gallery-item-6.jpg",
         category: "Abitazioni",
         description: "Bagno moderno splendente"
     },
     {
-        imageSrc: "/assets/images/gallery-item-7.jpg",
+        imageSrc: "../assets/images/gallery-item-7.jpg",
         category: "Vetri",
         description: "Vetri cristallini senza aloni"
     },
     {
-        imageSrc: "/assets/images/gallery-item-8.jpg",
+        imageSrc: "../assets/images/gallery-item-8.jpg",
         category: "Prodotti",
         description: "Prodotti ecologici certificati"
     },
     {
-        imageSrc: "/assets/images/gallery-item-9.jpg",
+        imageSrc: "../assets/images/gallery-item-9.jpg",
         category: "Condominiali",
         description: "Scale e androni condominiali"
     }
@@ -54,7 +54,7 @@ let galleryData = [
 
 let categories = galleryData.map(item => item.category);
 
-let galleryCardComponent = await GetComponent("/components/gallery-card.html");
+let galleryCardComponent = await GetComponent("../components/gallery-card.html");
 
 galleryData.forEach((item) => {
     gallery.innerHTML += initComponent(galleryCardComponent, item);
