@@ -145,11 +145,6 @@ This project intentionally avoids frameworks to:
 
 ---
 
-## 🔗 Live Demo
-[View Live Site](https://islammo7amed.github.io/CaronnoMultiServizi/)
-
----
-
 ## 👨‍💻 Author
 
 Developed by Islam Mohamed  
