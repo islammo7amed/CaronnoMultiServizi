@@ -147,7 +147,7 @@
 
 .contact form input[type='submit'] {
     margin-top: 1.5rem;
-    text-align: centr;
+    text-align: center;
     background-color: var(--color-primary);
     color: white;
     font-weight: 600;
